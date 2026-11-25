@@ -1,0 +1,14 @@
+{
+	"name": "gtm-tool-finder",
+	"description": "Search the OneGTMLab GTM tool directory (tool API reviews, comparisons and glossary terms) offline, from D or the command line.",
+	"homepage": "https://www.onegtmlab.dev",
+	"authors": ["Jainendra Ojha"],
+	"copyright": "Copyright 2026, OneGTMLab",
+	"license": "MIT",
+	"stringImportPaths": ["views"],
+	"targetType": "library",
+	"configurations": [
+		{ "name": "library", "excludedSourceFiles": ["source/app.d"] },
+		{ "name": "cli", "targetType": "executable", "targetName": "gtm-tool-finder", "mainSourceFile": "source/app.d" }
+	]
+}

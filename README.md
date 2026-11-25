@@ -1,0 +1,22 @@
+# gtm-tool-finder
+
+Search the [OneGTMLab](https://www.onegtmlab.dev) GTM tool directory from D or the command line:
+
+- API reviews for 66 sales and marketing tools: pricing, rate limits, keys and MCP support
+- 99 head-to-head tool comparisons, such as Apollo vs Clay
+- 110 plain-English definitions of GTM terms
+
+```d
+import gtm_tool_finder;
+
+foreach (r; search("enrichment", "tool"))
+    writeln(r.name, " ", r.url);
+```
+
+```bash
+dub run --config=cli gtm-tool-finder -- clay --kind comparison
+```
+
+Every result links to the full page on [onegtmlab.dev/tool-directory](https://www.onegtmlab.dev/tool-directory). The list ships inside the package, so it works offline and sends no data anywhere.
+
+Built by [OneGTMLab](https://www.onegtmlab.dev), a GTM engineering agency. MIT licensed.
