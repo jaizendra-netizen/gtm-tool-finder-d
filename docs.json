@@ -1,0 +1,10 @@
+{
+  "name": "gtm-tool-finder",
+  "description": "Search the OneGTMLab GTM tool directory offline from D (MIT)",
+  "sidebar": [
+    {
+      "title": "Overview",
+      "href": "/"
+    }
+  ]
+}
